@@ -12,21 +12,22 @@ public class Main {
     static String path = "C:\\Users\\38050\\Desktop\\IT - Hillel\\Projects" +
             "\\TreeSetAndTreeMap\\src\\apps\\app1\\urlsTest";
 
-
+    // get duplicates size and urls with quantity repeat
     public static void main(String[] arg) throws FileNotFoundException {
-        System.out.println(getDuplicates().size());
-        for (Map.Entry<String, Long> map : getDuplicates().entrySet()) {
+        System.out.print("Size: " + getDuplicates(getList()).size());
+
+        for (Map.Entry<String, Long> map : getDuplicates(getList()).entrySet()) {
             System.out.println("\n" + map);
         }
     }
 
     // method that returns a list and quantity repeating urls
-    public static TreeMap<String, Long> getDuplicates() throws FileNotFoundException {
+    public static Map<String, Long> getDuplicates(List<String> list) {
         Map<String, Long> frequency =
-                getList().stream().collect(Collectors.groupingBy(
+                list.stream().collect(Collectors.groupingBy(
                         Function.identity(), Collectors.counting()));
 
-        TreeMap<String, Long> duplicates = new TreeMap<>();
+        Map<String, Long> duplicates = new TreeMap<>();
         for (Map.Entry<String, Long> map : frequency.entrySet()) {
             if (map.getValue() >= 63)
                 duplicates.put(map.getKey(), map.getValue());
