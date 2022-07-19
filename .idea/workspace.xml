@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ab43ea6-2f9f-4ae9-a8c9-41c8eb7bf345" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TreeSetAndTreeMap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/apps/app3/Main.java" afterDir="false" />
+    <list default="true" id="1ab43ea6-2f9f-4ae9-a8c9-41c8eb7bf345" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/src/apps/app1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urls.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/apps/app1/urlsTest" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +29,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\38050\Desktop\IT - Hillel\Projects\TreeSetAndTreeMap\src" />
+      <recent name="C:\Users\38050\Desktop\IT - Hillel\Projects\TreeSetAndTreeMap\src\apps" />
+      <recent name="C:\Users\38050\Desktop\IT - Hillel\Projects\TreeSetAndTreeMap\src\apps\app1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.apps.app1.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="apps.app3.Main" />
       <module name="TreeSetAndTreeMap" />
@@ -53,8 +56,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="apps.app1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="apps.app1.Main" />
+      <module name="TreeSetAndTreeMap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apps.app1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.apps.app1.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -68,6 +85,14 @@
       <option name="presentableId" value="Default" />
       <updated>1657982361429</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1657984241273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1657984241273</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>
