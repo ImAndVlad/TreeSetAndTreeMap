@@ -7,17 +7,23 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Main {
+    static int count;
 
     // the address of the text file
     static String path = "C:\\Users\\38050\\Desktop\\IT - Hillel\\Projects" +
             "\\TreeSetAndTreeMap\\src\\apps\\app1\\urlsTest";
 
     // get duplicates size and urls with quantity repeat
-    public static void main(String[] arg) throws FileNotFoundException {
-        System.out.print("Size: " + getDuplicates(getList()).size());
+    public static void main(String[] arg) throws Exception {
+        try {
+            System.out.print("Size: " + getDuplicates(getList()).size());
 
-        for (Map.Entry<String, Long> map : getDuplicates(getList()).entrySet()) {
-            System.out.println("\n" + map);
+            for (Map.Entry<String, Long> map : getDuplicates(getList()).entrySet()) {
+                count++;
+                System.out.println("\n" + count + ") " + map);
+            }
+        } catch (Exception e) {
+            System.err.print("File not found");
         }
     }
 
@@ -41,10 +47,14 @@ public class Main {
         Scanner scanner = new Scanner(file);
         List<String> list = new ArrayList<>();
 
-        while (scanner.hasNextLine()) {
-            list.add(scanner.nextLine());
+        try {
+            while (scanner.hasNextLine()) {
+                list.add(scanner.nextLine());
+            }
+            scanner.close();
+        } catch (Exception e) {
+            System.err.print("File not found");
         }
-        scanner.close();
 
         return list;
     }
